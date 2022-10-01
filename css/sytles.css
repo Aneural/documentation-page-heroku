@@ -1,0 +1,134 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* title and navbar config start */
+#header {
+  text-align: center;
+  font-size: bolder;
+  margin: 10px 10px 10px 25px;
+  font-size: 1.8em;
+  width: 245.8px;
+}
+#navbar {
+  display: flex;
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  flex-direction: column;
+}
+#navbar ul {
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+#navbar li {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid;
+  width: 100%;
+  font-size: 17px;
+}
+#navbar .nav-link {
+  text-decoration: none;
+  color: rgb(25, 25, 25);
+  display: block;
+  cursor: pointer;
+  margin: 10px 10px 10px 25px;
+}
+#navbar .nav-link:hover {
+  color: rgb(46, 46, 46);
+  text-decoration: underline;
+}
+
+@media (max-width: 810px) {
+  #header {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #navbar {
+    margin-top: 30px;
+    position: relative;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 217px;
+    width: 100%;
+    border-style: none;
+    padding: 0;
+  }
+  #navbar ul {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    margin: 30px 2px 0 2px;
+  }
+  #navbar .nav-link {
+    position: relative;
+  }
+}
+/* title and navbar config end */
+
+/* main-doc config start */
+#main-doc {
+  position: absolute;
+  padding: 25px;
+  margin-left: 310px;
+  max-width: 1500px;
+}
+#main-doc header {
+  font-size: 27px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.code-snippet p {
+  position: relative;
+  left: 10px;
+  background: #eee;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+.code-snippet code {
+  /* display: block; */
+  white-space: pre-line;
+  font-family: 'Noto Sans Mono', monospace;
+  font-size: 12px;
+}
+#main-doc .within-list {
+  margin-left: -50px;
+}
+#main-doc li {
+  margin: 18px 0 0 50px;
+}
+#main-doc span {
+  display: block;
+  left: 10px;
+}
+.main-section p {
+  margin-top: 25px;
+}
+@media (max-width: 810px) {
+  #main-doc {
+    position: relative;
+    margin: 0;
+    min-width: 350px;
+    padding: 10px;
+  }
+  .code-snippet {
+    max-width: 100%;
+    width: 100%;
+  }
+  .code-snippet p {
+    left: 0;
+  }
+}
+/* main-doc config end */ 
